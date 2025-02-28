@@ -39,9 +39,11 @@ img {
     --color-text: #ffffff;
     --color-primary: #5221E6;
     --color-green-accent: #3CC74E;
+    --color-blue-accent: #609bff;
     --color-pink-accent: #E95D90;
     --color-peach-accent: #FFF3E4;
     --color-violet-accent: #FBE4FF;
+    --color-violet-accent-darck: #8491a0;
 
 
 
@@ -196,17 +198,19 @@ section {
 @media only screen and (min-width: 1440px) {
    
 .header {
-     background: linear-gradient(to right, #000000 33.33%, #181823 33.33%);
-    width: 100%;
+    background: linear-gradient(to right, #000000 50%, #181823 50%);
+   
 }
+
+.header .container {
+    background: linear-gradient(to right, #000000 540px, #181823 540px);
+    
+}
+
 }
 
 
 /*hero*/
-/* 
-.hero {
-    padding-bottom: 48px;
-} */
 
 .hero-img {
     margin-bottom: 48px;
@@ -273,10 +277,18 @@ section {
 @media only screen and (min-width: 1440px) {
 
 .hero {
-    background: linear-gradient(to right, #000000 33.33%, #181823 33.33%);
-    width: 100%;
+    background: linear-gradient(to right, #000000 50%, #181823 50%);
+    padding-top: 0;
     padding-bottom: 0;
+
   
+}
+
+.hero .container {
+    background: linear-gradient(to right, #000000 540px, #181823 540px);
+    padding-top: 80px;
+    padding-bottom: 84px;
+
 }
 
 
@@ -294,6 +306,65 @@ section {
 
 .hero::after {
     display: block;
-    margin-top: 84px;
+    margin-top: 0;
 }
 }
+
+/*work*/
+
+.work {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.work-title {
+    font-weight: 700;
+    font-size: 32px;
+}
+.work-title-accent {
+font-size: 16px;
+text-transform: uppercase;
+color: var(--color-violet-accent-darck);
+
+}
+
+.work-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+}
+.work-item .number {
+    font-size: 117px;
+    color: var(--color-violet-accent-darck);
+}
+
+.work-item-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.work-item-title .green {
+    color: var(--color-green-accent);
+}
+
+.work-item-title .blue {
+    color: var(--color-blue-accent);
+}
+
+.work-item-title .pink {
+    color: var(--color-pink-accent);
+}
+
+
+.work-item-text {
+    font-size: 16px;
+    color: var(--color-violet-accent-darck);
+   
+}
+
+
